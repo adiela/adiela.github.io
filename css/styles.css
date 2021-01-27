@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+/* ===============================================
+ELEMENTS
+==================================================*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+a, a:visited {
+    color: #ffb800;
+    text-decoration: none;
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    color: #4e4e4e;
+    font-size: 12px;
+}
+
+/* ===============================================
+NAVBAR
+==================================================*/
+
+.navbar {
+    position: fixed;
+    z-index: 5;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    -webkit-box-shadow: 0 -5px 15px 0 rgba(0,0,0,.2);
+    box-shadow: 0 -5px 15px 0 rgba(0,0,0,.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    display: none;
+}
+
+.nav-items {
+    list-style: none;
+    display: block;
+    padding: 0;
+    width: 100%
+}
+
+.nav-item {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+}
+
+a.nav-link {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    color: #000000;
+}
+
+a.nav-link:hover, a.nav-link-active {
+    color: #ffb800;
+}
+
+.nav-icon {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        top: 0;
+        bottom: auto;
+        -webkit-box-shadow: 0 5px 15px 0 rgba(0,0,0,.2);
+        box-shadow: 0 5px 15px 0 rgba(0,0,0,.2);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+    }
+
+    #logo {
+        display: block;
+    }
+
+    .nav-items {
+        width: auto;
+    }
+
+    .nav-item {
+        display: inline-block;
+        width: auto;
+        margin: 0 10px;
+    }
+
+    .nav-icon {
+        display: none !important;
+    }
+
+    a.nav-link:hover, a.nav-link-active {
+        border-bottom: solid 3px #ffb800;
+        color: #ffb800;
+    }
+
+    a.nav-link {
+        font-size: 18px;
+    }
+}
+
+/* ===============================================
+FORMS
+==================================================*/
+
+*::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    color: #4e4e4e;
+}
+
+.form-label {
+    display: block;
+}
+
+.form-input {
+    width: 100%;
+    display: block;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1px #4e4e4e;
+    margin-top: 10px;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset:focus-within label {
+    color: #ffb800;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #ffb800;
+}
+
+/* ===============================================
+BUTTONS
+==================================================*/
+.btn {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 3px;
+    padding: 0 16px;
+    min-width: 64px;
+    height: 36px;
+    vertical-align: middle;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #ffb800;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 36px;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.btn::-moz-focus-inner {
+    border: none;
+}
+
+/* Hover, Focus */
+.btn:hover,
+.btn:focus {
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* Active */
+.btn:active {
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* Disabled */
+.btn:disabled {
+    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
+    background-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.12);
+    box-shadow: none;
+    cursor: initial;
+}
+
+.btn-center {
+    display: block;
+    margin: 0 auto;
+}
+
+/* ===============================================
+LAYOUT
+==================================================*/
+
+.page-section {
+    min-height: 100vh;
+    padding-top: 40px;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px
+    }
+}
+
+.columns-2 {
+    column-count: 2;
+    break-inside: avoid;
+    row-gap: 100px;
+}
+
+/* ===============================================
+RESPONSIVE FONT SIZE
+==================================================*/
+
+#about h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+#about h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+#about .greeting {
+    font-size: 16px;
+    margin: 0;
+}
+
+#about .description {
+    font-size: 14px;
+}
+
+@media (min-width: 576px) {
+    #about h1 {
+        font-size: 54px;
+    }
+    #about h2 {
+        font-size: 24px;
+    }
+    #about .description {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    #about h1 {
+        font-size: 72px;
+    }
+    #about h2 {
+        font-size: 30px;
+    }
+    #about .greeting {
+        font-size: 24px;
+        margin: 0;
+    }
+    #about .description {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+    #about h1 {
+        font-size: 96px;
+    }
+    #about h2 {
+        font-size: 36px;
+    }
+    #about .greeting {
+        font-size: 30px;
+        margin: 0;
+    }
+}
+
+/* ===============================================
+CUSTOM STYLES
+==================================================*/
+
+.page-header {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 48px;
+}
+
+.profile-link {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card {
+    webkit-box-shadow: 4px 8px 28px rgba(39,44,49,.1), 1px 3px 8px rgba(39,44,49,.08), -1px -3px 5px rgba(39,44,49,.05);
+    box-shadow: 4px 8px 28px rgba(39,44,49,.1), 1px 3px 8px rgba(39,44,49,.08), -1px -3px 5px rgba(39,44,49,.05);
+    padding: 16px;
+    -webkit-column-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 25px;
+    display: inline-block;
+    width: 100%;
+}
+
+.help-text {
+    text-align: center;
+    margin-top: -40px;
+    font-size: 12px;
+}

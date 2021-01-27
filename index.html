@@ -1,0 +1,148 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adiela Abishua</title>
+
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.8.2/devicon.min.css"
+          integrity="sha512-WpxXUDDdqQHGTKs+zQgQLaeOFXF1v/tLuWUJuu7n+XzfgKTqlZgMuTeNSMGxFqjTHKrw+ZkD8IQ5fcOjLegcgQ=="
+          crossOrigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+          integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+          crossOrigin="anonymous"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+
+
+<nav class="navbar">
+    <img src='favicon.ico' alt="Logo" height="36px" width="auto" id="logo"/>
+    <ul class="nav-items">
+        <li class="nav-item">
+            <a href="#about" class="nav-link">
+                <i class="fa fa-user nav-icon"></i>
+                About
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#skills" class="nav-link">
+                <i class="fa fa-code nav-icon"></i>
+                Skills
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#contact" class="nav-link">
+                <i class="fa fa-phone-alt nav-icon"></i>
+                Contact
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<div class="container">
+
+    <section class="page-section" id="about">
+        <p class="greeting">Hello, I'm</p>
+        <h1 class="name">Adiela Abishua</h1>
+        <h2 class="title">Full-Stack Software Developer</h2>
+        <p class="description">I have professional experience in building enterprise software in the financial,
+            transportation, and
+            renewable energy industries. I build tools that are fast, beautiful, and easy to use.</p>
+        <div id="profile-links">
+            <a href="https://www.linkedin.com/in/adielaabishua/" target="_blank" class="profile-link">
+                <i class="devicon-linkedin-plain"></i>
+                Linkedin
+            </a>
+            <a href="https://github.com/adiela/" target="_blank" class="profile-link">
+                <i class="devicon-github-original"></i>
+                Github
+            </a>
+        </div>
+    </section>
+    <section class="page-section" id="skills">
+        <h1 class="page-header">Skills</h1>
+
+        <div class="columns-2">
+            <div class="card">
+                <h2>Languages</h2>
+                <ul>
+                    <li><i class="devicon-python-plain colored"></i> Python</li>
+                    <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
+                    <li><i class="devicon-typescript-plain colored"></i> TypeScript</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>
+                    Libraries & Frameworks
+                </h2>
+                <ul>
+                    <li>Flask</li>
+                    <li><i class="devicon-django-plain colored"></i> Django</li>
+                    <li><i class="devicon-react-original colored"></i> React</li>
+                    <li><i class="devicon-redux-original colored"></i> Redux</li>
+                    <li><i class="devicon-angularjs-plain colored"></i> Angular</li>
+                    <li><i class="devicon-nodejs-plain colored"></i> NodeJS</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Databases</h2>
+                <ul>
+                    <li><i class="devicon-mysql-plain colored"></i> MySQL</li>
+                    <li><i class="devicon-postgresql-plain colored"></i> Postgres</li>
+                    <li><i class="devicon-mongodb-plain colored"></i> Mongo DB</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Tools</h2>
+                <ul>
+                    <li><i class="devicon-git-plain colored"></i> Git</li>
+                    <li><i class="devicon-docker-plain colored"></i> Docker</li>
+                    <li><i class="devicon-travis-plain colored"></i> Travis CI</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <section class="page-section" id="contact">
+        <h1 class="page-header">Contact Me</h1>
+        <p class="help-text">Fill the form below or <a href="mailto:adiela.abishua@gmail.com">send me an email</a></p>
+        <form
+                action="https://formspree.io/f/xrgojjly"
+                method="POST"
+        >
+            <fieldset>
+                <label htmlFor="name" class="form-label">Name</label>
+                <input type="text" name="name" id="name" class="form-input" required={true}/>
+            </fieldset>
+            <fieldset>
+                <label htmlFor="email" class="form-label">Email</label>
+                <input type="email" name="email" id="email" class="form-input"
+                       required={true}/>
+            </fieldset>
+            <fieldset>
+                <label htmlFor="message" class="form-label">Message</label>
+                <textarea name="message" id="message" required={true}
+                          class="form-input"
+                          rows="10"></textarea>
+            </fieldset>
+            <input class="btn btn-center" type="submit" value="Send Message"/>
+        </form>
+    </section>
+    <footer>Designed and Developed by Adiela Abishua &#169;<script
+            type="text/javascript">document.write(new Date().getFullYear());</script>
+    </footer>
+
+</div>
+
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
