@@ -67,10 +67,10 @@
     <section class="page-section" id="skills">
         <h1 class="page-header">Skills</h1>
 
-        <div class="columns-2">
+        <div>
             <div class="card">
                 <h2>Languages</h2>
-                <ul>
+                <ul class="inline-list-md">
                     <li><i class="devicon-python-plain colored"></i> Python</li>
                     <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
                     <li><i class="devicon-typescript-plain colored"></i> TypeScript</li>
@@ -81,7 +81,7 @@
                 <h2>
                     Libraries & Frameworks
                 </h2>
-                <ul>
+                <ul class="inline-list-md">
                     <li>Flask</li>
                     <li><i class="devicon-django-plain colored"></i> Django</li>
                     <li><i class="devicon-react-original colored"></i> React</li>
@@ -93,7 +93,7 @@
 
             <div class="card">
                 <h2>Databases</h2>
-                <ul>
+                <ul class="inline-list-md">
                     <li><i class="devicon-mysql-plain colored"></i> MySQL</li>
                     <li><i class="devicon-postgresql-plain colored"></i> Postgres</li>
                     <li><i class="devicon-mongodb-plain colored"></i> Mongo DB</li>
@@ -102,7 +102,7 @@
 
             <div class="card">
                 <h2>Tools</h2>
-                <ul>
+                <ul class="inline-list-md">
                     <li><i class="devicon-git-plain colored"></i> Git</li>
                     <li><i class="devicon-docker-plain colored"></i> Docker</li>
                     <li><i class="devicon-travis-plain colored"></i> Travis CI</li>
@@ -120,12 +120,11 @@
         >
             <fieldset>
                 <label htmlFor="name" class="form-label">Name</label>
-                <input type="text" name="name" id="name" class="form-input" required={true}/>
+                <input type="text" name="name" id="name" class="form-input" required={true} />
             </fieldset>
             <fieldset>
                 <label htmlFor="email" class="form-label">Email</label>
-                <input type="email" name="email" id="email" class="form-input"
-                       required={true}/>
+                <input type="email" name="email" id="email" class="form-input" required={true} />
             </fieldset>
             <fieldset>
                 <label htmlFor="message" class="form-label">Message</label>
@@ -133,7 +132,7 @@
                           class="form-input"
                           rows="10"></textarea>
             </fieldset>
-            <input class="btn btn-center" type="submit" value="Send Message"/>
+            <input class="btn btn-center" type="submit" value="Send" />
         </form>
     </section>
     <footer>Designed and Developed by Adiela Abishua &#169;<script
