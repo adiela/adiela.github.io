@@ -50,14 +50,14 @@ NAVBAR
 
 .nav-items {
     list-style: none;
-    display: block;
+    display: flex;
+    justify-content: space-around;
     padding: 0;
     width: 100%
 }
 
 .nav-item {
     display: inline-block;
-    width: 25%;
     text-align: center;
 }
 
@@ -223,7 +223,15 @@ LAYOUT
 
 .page-section {
     min-height: 100vh;
-    padding-top: 60px;
+    padding-top: 5px;
+    padding-bottom: 70px;
+}
+
+@media (min-width: 768px) {
+    .page-section {
+        padding-top: 60px;
+        padding-bottom: 0px;
+    }
 }
 
 .container {
@@ -336,7 +344,14 @@ CUSTOM STYLES
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-    font-size: 48px;
+    font-size: 36px;
+    line-height: 2;
+}
+
+@media (min-width: 768px) {
+    .page-header {
+        font-size: 48px;
+    }
 }
 
 .profile-link {
