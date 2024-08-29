@@ -240,7 +240,7 @@ a:focus {
 /* Custom classes */
 
 .blog-wrapper {
-  margin: var(--spacing-0) auto;
+  margin: var(--spacing-16) auto;
   max-width: var(--maxWidth-5xl);
   padding: var(--spacing-10) var(--spacing-24);
 }
