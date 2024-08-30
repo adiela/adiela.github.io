@@ -1,8 +1,8 @@
 import * as React from "react"
-import avatar from "../images/adiela_abishua.jpg"
 import SocialLinks from "../components/SocialLinks"
 import Layout from "../components/Layout"
 import { Link } from "gatsby" 
+import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPage = () => {
   return (
@@ -10,7 +10,7 @@ const IndexPage = () => {
     <main className="container">
       <section id="about-section">
         <div className="column1">
-          <img src={avatar} alt="Personal Image" className="avatar"/>
+          <StaticImage src="../images/adiela_abishua.jpg" alt="Personal Image" className="avatar" quality={100}/>
           <SocialLinks/>
         </div>
         <div className="column2">
