@@ -592,11 +592,16 @@ input, textarea {
   padding: 20px;
   width: 100%;
   font-family: var(--body-font);
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 input:focus, textarea:focus {
   outline-color: var(--secondary-accent-color);
+}
+
+.form-error {
+  margin-bottom: 0;
+  font-size: var(--fontSize-0);
 }
 
 /* Responsive styling for smaller devices */
