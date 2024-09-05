@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from 'gatsby'
 import IconLinkedin from "./icons/IconLinkedIn"
 import IconTwitter from "./icons/IconTwitter"
 import IconGithub from "./icons/IconGithub"
@@ -15,7 +14,7 @@ const socialMediaLinks = [
 
 const SocialLinks = () => (
     <ul className="social-media-links">
-        {socialMediaLinks.map(link => <li key={link.name} className="social-media-link" ><Link to={link.address}><Icon name={link.name} /></Link></li>)}
+        {socialMediaLinks.map(link => <li key={link.name} className="social-media-link" ><a href={link.address}><Icon name={link.name} /></a></li>)}
     </ul>
     
   );
