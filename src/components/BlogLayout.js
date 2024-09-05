@@ -8,8 +8,9 @@ const BlogLayout = ({ children }) => {
       <div className="blog-wrapper">
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
+          © {new Date().getFullYear()}, Built by{` `}
+          <a href="https://www.github.com/adiela">Adiela Abishua</a>
+          {`  with `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
       </div>
