@@ -14,7 +14,7 @@ const socialMediaLinks = [
 
 const SocialLinks = () => (
     <ul className="social-media-links">
-        {socialMediaLinks.map(link => <li key={link.name} className="social-media-link" ><a href={link.address}><Icon name={link.name} /></a></li>)}
+        {socialMediaLinks.map(link => <li key={link.name} className="social-media-link" ><a aria-label={`${link.name}-link`} href={link.address}><Icon name={link.name} /></a></li>)}
     </ul>
     
   );
