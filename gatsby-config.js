@@ -17,6 +17,8 @@ module.exports = {
     description: `Software Engineering Blog`,
     siteUrl: `https://adiela.me/`,
     social: {
+      github: `adiela`,
+      linkedin: `adielaabishua`,
       twitter: `adielaabishua`,
     },
   },
