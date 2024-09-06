@@ -70,7 +70,7 @@ const ContactForm = () => {
     <form onSubmit={handleSubmit}>
         <input
           type="text"
-          id="comtact-name"
+          id="name"
           name="name"
           value={formData.name}
           onChange={handleInputChange}
@@ -80,7 +80,7 @@ const ContactForm = () => {
         <input
           type="email"
           id="email"
-          name="contact-email"
+          name="email"
           value={formData.email}
           onChange={handleInputChange}
           placeholder="Email"
@@ -88,7 +88,7 @@ const ContactForm = () => {
         {errors.email && <p className='form-error' style={{ color: 'red' }}>{errors.email}</p>}
         <textarea
           id="message"
-          name="contact-message"
+          name="message"
           value={formData.message}
           onChange={handleInputChange}
           placeholder='Message'
