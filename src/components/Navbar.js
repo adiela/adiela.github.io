@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 
 const navLinks = [
     {text: "About", address: "/"},
-    {text: "Projects", address: "#"},
+    {text: "Projects", address: "/projects"},
     {text: "Blog", address: "/blog"},
     {text: "Contact", address: "/contact"},
 ]
