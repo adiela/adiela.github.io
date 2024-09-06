@@ -229,6 +229,7 @@ table thead tr th {
 /* Link */
 
 a {
+  text-decoration: none;
   color: var(--primary-accent-color);
 }
 

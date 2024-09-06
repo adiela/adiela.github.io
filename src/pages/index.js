@@ -18,7 +18,7 @@ const IndexPage = () => {
           <h1 className="heading-1 font-xl">Adiela Abishua</h1>
           <h2 className="heading-2">Full-Stack Software Engineer</h2>
           <p id="bio">I am a software engineer with over 5 years of professional experience. I have built B2C and  B2B software. I am passionate about the use of technology in solving real world problems.</p>
-        <Link className="button float-right">View Resume</Link> 
+        <a href="/resume.pdf" className="button float-right">View Resume</a> 
         </div>
       </section>
     </main>
