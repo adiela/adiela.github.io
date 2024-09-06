@@ -237,6 +237,12 @@ a:focus {
   text-decoration: none;
 }
 
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 /* Custom classes */
 
 .blog-wrapper {
@@ -545,7 +551,7 @@ a:focus {
 
 /* Buttons */
 
-input[type="button"], .button {
+input[type="button"], button, .button {
   background-image: linear-gradient(140deg, var(--primary-accent-color), var(--secondary-accent-color));
   padding: 15px 25px;
   text-transform: uppercase;
@@ -558,6 +564,10 @@ input[type="button"], .button {
   font-weight: 500;
   font-family: Poppins;
   letter-spacing: 1px;
+}
+
+button[type="submit"] {
+  width: 100%
 }
 
 /* Contact Section */
@@ -584,6 +594,9 @@ input[type="button"], .button {
 
 form {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
 input, textarea {
@@ -592,7 +605,6 @@ input, textarea {
   padding: 20px;
   width: 100%;
   font-family: var(--body-font);
-  margin-top: 20px;
 }
 
 input:focus, textarea:focus {
