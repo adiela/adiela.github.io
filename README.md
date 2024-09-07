@@ -18,7 +18,7 @@ To get started with this project, follow these instructions:
 
 Make sure you have the following installed on your local development machine:
 
-- [Node.js](https://nodejs.org/en/) (v14+ recommended)
+- [Node.js](https://nodejs.org/en/) (v18+)
 - [Gatsby CLI](https://www.gatsbyjs.com/docs/reference/gatsby-cli/)
 
 
