@@ -379,9 +379,6 @@ fieldset {
 
 .nav-link{
   text-decoration: none;
-}
-
-.nav-link:visited{
   color: var(--color-text);
 }
 
