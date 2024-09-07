@@ -7,7 +7,7 @@ const BlogLayout = ({ children }) => {
     <Layout>
       <div className="blog-wrapper">
         <main>{children}</main>
-        <footer>
+        <footer id="blog-footer">
           © {new Date().getFullYear()}, Built by{` `}
           <a href="https://www.github.com/adiela">Adiela Abishua</a>
           {`  with `}
