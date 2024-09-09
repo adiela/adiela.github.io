@@ -5,7 +5,7 @@ import IconGithub from './IconGithub';
 import IconLinkedin from './IconLinkedIn';
 import IconTwitter from './IconTwitter';
 
-const Icon = ({ name }) => {
+function Icon({ name }) {
   switch (name) {
     case 'Codepen':
       return <IconCodepen />;
@@ -16,7 +16,7 @@ const Icon = ({ name }) => {
     case 'Twitter':
       return <IconTwitter />;
   }
-};
+}
 
 Icon.propTypes = {
   name: PropTypes.string.isRequired,

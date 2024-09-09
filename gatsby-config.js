@@ -9,59 +9,59 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Adiela Abishua - Software Engineering Blog`,
+    title: 'Adiela Abishua - Software Engineering Blog',
     author: {
-      name: `Adiela Abishua`,
-      summary: `Software Engineer with years of experience B2B and B2C software in multiple industries`,
+      name: 'Adiela Abishua',
+      summary: 'Software Engineer with years of experience B2B and B2C software in multiple industries',
     },
-    description: `Software Engineering Blog`,
-    siteUrl: `https://adiela.me/`,
+    description: 'Software Engineering Blog',
+    siteUrl: 'https://adiela.me/',
     social: {
-      github: `adiela`,
-      linkedin: `adielaabishua`,
-      twitter: `adielaabishua`,
+      github: 'adiela',
+      linkedin: 'adielaabishua',
+      twitter: 'adielaabishua',
     },
   },
   plugins: [
-    `gatsby-plugin-image`,
+    'gatsby-plugin-image',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content/blog`,
-        name: `blog`,
+        name: 'blog',
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
+        name: 'images',
         path: `${__dirname}/src/images`,
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-images`,
+            resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 630,
             },
           },
           {
-            resolve: `gatsby-remark-responsive-iframe`,
+            resolve: 'gatsby-remark-responsive-iframe',
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
+              wrapperStyle: 'margin-bottom: 1.0725rem',
             },
           },
-          `gatsby-remark-prismjs`,
+          'gatsby-remark-prismjs',
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-feed`,
+      resolve: 'gatsby-plugin-feed',
       options: {
         query: `
           {
@@ -77,17 +77,14 @@ module.exports = {
         `,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.nodes.map(node => {
-                return Object.assign({}, node.frontmatter, {
-                  description: node.excerpt,
-                  date: node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + node.fields.slug,
-                  custom_elements: [{ "content:encoded": node.html }],
-                })
-              })
-            },
+            serialize: ({ query: { site, allMarkdownRemark } }) => allMarkdownRemark.nodes.map((node) => ({
+              ...node.frontmatter,
+              description: node.excerpt,
+              date: node.frontmatter.date,
+              url: site.siteMetadata.siteUrl + node.fields.slug,
+              guid: site.siteMetadata.siteUrl + node.fields.slug,
+              custom_elements: [{ 'content:encoded': node.html }],
+            })),
             query: `{
               allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
                 nodes {
@@ -103,25 +100,25 @@ module.exports = {
                 }
               }
             }`,
-            output: "/rss.xml",
-            title: "Adiela Abishua - Software Engineering Blog RSS Feed",
+            output: '/rss.xml',
+            title: 'Adiela Abishua - Software Engineering Blog RSS Feed',
           },
         ],
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `Adiela Abishua - Software Engineering Blog`,
-        short_name: `Adiela Abishua`,
-        start_url: `/`,
-        background_color: `#ffffff`,
+        name: 'Adiela Abishua - Software Engineering Blog',
+        short_name: 'Adiela Abishua',
+        start_url: '/',
+        background_color: '#ffffff',
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/logo.svg`, // This path is relative to the root of the site.
+        display: 'minimal-ui',
+        icon: 'src/images/logo.svg', // This path is relative to the root of the site.
       },
     },
   ],
-}
+};

@@ -1,13 +1,13 @@
-import * as React from "react"
-import Navbar from "../components/Navbar"
+import * as React from 'react';
+import Navbar from './Navbar';
 
-const Layout = (props) => {
+function Layout(props) {
   return (
-   <>
-    <Navbar/>
-    {props.children}
-   </>
-  )
+    <>
+      <Navbar />
+      {props.children}
+    </>
+  );
 }
 
-export default Layout
+export default Layout;

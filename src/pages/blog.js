@@ -1,13 +1,13 @@
-import * as React from "react"
-import { Link, graphql } from "gatsby"
+import * as React from 'react';
+import { Link, graphql } from 'gatsby';
 
-import Bio from "../components/bio"
-import BlogLayout from "../components/BlogLayout"
-import Seo from "../components/seo"
+import Bio from '../components/bio';
+import BlogLayout from '../components/BlogLayout';
+import Seo from '../components/seo';
 
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
+function BlogIndex({ data, location }) {
+  const siteTitle = data.site.siteMetadata?.title || 'Title';
+  const posts = data.allMarkdownRemark.nodes;
 
   if (posts.length === 0) {
     return (
@@ -19,15 +19,15 @@ const BlogIndex = ({ data, location }) => {
           gatsby-config.js).
         </p>
       </BlogLayout>
-    )
+    );
   }
 
   return (
     <BlogLayout location={location} title={siteTitle}>
       <Bio />
-      <ol style={{ listStyle: `none` }}>
-        {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
+      <ol style={{ listStyle: 'none' }}>
+        {posts.map((post) => {
+          const title = post.frontmatter.title || post.fields.slug;
 
           return (
             <li key={post.fields.slug}>
@@ -54,21 +54,23 @@ const BlogIndex = ({ data, location }) => {
                 </section>
               </article>
             </li>
-          )
+          );
         })}
       </ol>
     </BlogLayout>
-  )
+  );
 }
 
-export default BlogIndex
+export default BlogIndex;
 
 /**
  * Head export to define metadata for the page
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="All posts" />
+export function Head() {
+  return <Seo title="All posts" />;
+}
 
 export const pageQuery = graphql`
   {
@@ -91,4 +93,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

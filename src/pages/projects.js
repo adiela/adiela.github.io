@@ -1,16 +1,18 @@
-import * as React from "react"
-import Layout from "../components/Layout"
+import * as React from 'react';
+import Layout from '../components/Layout';
 
-const IndexPage = () => {
+function IndexPage() {
   return (
-   <Layout>
-    <main className="container">
+    <Layout>
+      <main className="container">
         Comming soon! Currently updating portfolio projects.
-    </main>
-   </Layout>
-  )
+      </main>
+    </Layout>
+  );
 }
 
-export default IndexPage
+export default IndexPage;
 
-export const Head = () => <title>Home Page</title>
+export function Head() {
+  return <title>Home Page</title>;
+}

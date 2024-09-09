@@ -5,11 +5,11 @@
  * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
  */
 
-import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import * as React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 
-const Bio = () => {
+function Bio() {
   const data = useStaticQuery(graphql`
     query BioQuery {
       site {
@@ -24,18 +24,18 @@ const Bio = () => {
         }
       }
     }
-  `)
+  `);
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
-  const author = data.site.siteMetadata?.author
-  const social = data.site.siteMetadata?.social
+  const author = data.site.siteMetadata?.author;
+  const social = data.site.siteMetadata?.social;
 
   return (
     <div className="bio">
       <StaticImage
         className="bio-avatar"
         layout="fixed"
-        formats={["auto", "webp", "avif"]}
+        formats={['auto', 'webp', 'avif']}
         src="../images/adiela_abishua.jpg"
         width={50}
         height={50}
@@ -44,11 +44,15 @@ const Bio = () => {
       />
       {author?.name && (
         <p>
-          Written by <strong><a href={`https://github.com/${social?.github || ``}`}>{author.name}</a></strong> {author?.summary || null}
+          Written by
+          {' '}
+          <strong><a href={`https://github.com/${social?.github || ''}`}>{author.name}</a></strong>
+          {' '}
+          {author?.summary || null}
         </p>
       )}
     </div>
-  )
+  );
 }
 
-export default Bio
+export default Bio;

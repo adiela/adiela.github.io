@@ -1,22 +1,25 @@
-import * as React from "react"
-import Layout from "../components/Layout"
+import * as React from 'react';
+import Layout from './Layout';
 
-const BlogLayout = ({ children }) => {
-
+function BlogLayout({ children }) {
   return (
     <Layout>
       <div className="blog-wrapper">
         <main>{children}</main>
         <footer id="blog-footer">
-          © {new Date().getFullYear()}, Built by{` `}
+          ©
+          {' '}
+          {new Date().getFullYear()}
+          , Built by
+          {' '}
           <a href="https://www.github.com/adiela">Adiela Abishua</a>
-          {`  with `}
+          {'  with '}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
       </div>
     </Layout>
-    
-  )
+
+  );
 }
 
-export default BlogLayout
+export default BlogLayout;
