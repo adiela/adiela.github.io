@@ -246,25 +246,6 @@ fieldset {
 
 /* Custom classes */
 
-.blog-wrapper {
-  margin: var(--spacing-16) auto;
-  max-width: var(--maxWidth-5xl);
-  padding: var(--spacing-10) var(--spacing-24);
-}
-
-@media (max-width: 1024px) {
-
-  .blog-wrapper {
-    max-width: var(--maxWidth-3xl);
-    padding: var(--spacing-10) var(--spacing-8);
-  }
-
-}
-
-.blog-wrapper[data-is-root-path="true"] .bio {
-  margin-bottom: var(--spacing-20);
-}
-
 .global-header {
   margin-bottom: var(--spacing-12);
 }
@@ -627,7 +608,7 @@ input:focus, textarea:focus {
 /* Responsive styling for smaller devices */
 @media (max-width: 1024px) {
   .container {
-      padding: 80px 25px 0;
+      padding: 80px 35px 0;
   }
 
   #about-section, #contact-section {

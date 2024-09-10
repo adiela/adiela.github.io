@@ -4,7 +4,7 @@ import Layout from './Layout';
 function BlogLayout({ children }) {
   return (
     <Layout>
-      <div className="blog-wrapper">
+      <div className="container">
         <main>{children}</main>
         <footer id="blog-footer">
           ©
