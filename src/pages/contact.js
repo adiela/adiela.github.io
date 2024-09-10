@@ -109,12 +109,17 @@ function ContactPage() {
   return (
     <Layout>
       <main id="contact-section" className="container">
-        <header id="contact-header">
+        <header>
           <h1 className="heading-1 font-l">Get in touch</h1>
           <p>
-            Feel free to connect with me on social media on any of the platforms linked below.
+            If you would like to work with me, feel free to reach out using this form.
+            <br />
+            You can also email me directly at
+            <a href="mailto:adiela.abishua@gmail.com"> adiela.abishua@gmail.com</a>
+            .
+            <br />
+            I will get back to you as soon as possible!
           </p>
-          <SocialLinks />
         </header>
         <ContactForm />
       </main>
