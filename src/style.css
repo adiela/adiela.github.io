@@ -314,11 +314,6 @@ fieldset {
   margin: var(--spacing-0);
 }
 
-#blog-footer {
-  position: absolute;
-  bottom: 0;
-}
-
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
 }
