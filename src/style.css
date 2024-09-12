@@ -244,19 +244,7 @@ fieldset {
   border: none;
 }
 
-/* Custom classes */
-
-.global-header {
-  margin-bottom: var(--spacing-12);
-}
-
-.main-heading {
-  font-size: var(--fontSize-6);
-  margin: 0;
-  background: linear-gradient(140deg, var(--primary-accent-color), var(--secondary-accent-color));
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+/* Blog */
 
 .post-list-item {
   margin-bottom: var(--spacing-8);
@@ -312,6 +300,17 @@ fieldset {
 
 .blog-post-nav ul {
   margin: var(--spacing-0);
+}
+
+#blog-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+#blog-footer {
+  text-align: center;
 }
 
 .gatsby-highlight {
