@@ -610,7 +610,8 @@ input:focus, textarea:focus {
 /* Responsive styling for smaller devices */
 @media (max-width: 1024px) {
   .container {
-      padding: 80px 35px 0;
+    max-width: 800px;
+    padding: 80px 35px 0;
   }
 
   #about-section, #contact-section {
