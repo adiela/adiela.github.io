@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SocialLinks from '../components/SocialLinks';
+import IconEnvelope from '../components/icons/IconEnvelope';
 import Layout from '../components/Layout';
 
 function ContactForm() {
@@ -111,15 +111,10 @@ function ContactPage() {
       <main id="contact-section" className="container">
         <header>
           <h1 className="heading-1 font-l">Get in touch</h1>
-          <p>
-            If you would like to work with me, feel free to reach out using this form.
-            <br />
-            You can also email me directly at
-            <a href="mailto:adiela.abishua@gmail.com"> adiela.abishua@gmail.com</a>
-            .
-            <br />
-            I will get back to you as soon as possible!
-          </p>
+          <a className="contact-form-link" href="mailto:adiela.abishua@gmail.com">
+            <IconEnvelope />
+            adielaabishua@gmail.com
+          </a>
         </header>
         <ContactForm />
       </main>
