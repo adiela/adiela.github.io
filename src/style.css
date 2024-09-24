@@ -56,7 +56,7 @@
   --primary-accent-color: #F4743D;
   --secondary-accent-color: #FF1F7F;
   --button-text-color: #ffffff;
-  --background-color: #ffffff;
+  --background-color: #fafafa;
   --input-bg-color: #f3f3f3;
 }
 
@@ -80,6 +80,7 @@ body {
   font-family: var(--font-body);
   font-size: var(--fontSize-1);
   color: var(--color-text);
+  background-color: var(--background-color);
 }
 
 footer {
@@ -511,17 +512,15 @@ fieldset {
   -webkit-text-fill-color: transparent;
 }
 
-.heading-2 {
+.sub-heading {
   font-size: 20px;
   color: var(--primary-accent-color);
-  margin: 0;
+  margin-top: 0;
   font-weight: 500;
 }
 
-.heading-3 {
-  font-size: 18px;
+.greeting {
   color: var(--primary-accent-color);
-  margin: 0;
 }
 
 #bio {
@@ -537,7 +536,7 @@ fieldset {
 
 input[type="button"], button, .button {
   background-image: linear-gradient(140deg, var(--primary-accent-color), var(--secondary-accent-color));
-  padding: 15px 25px;
+  padding: 12px 25px;
   text-transform: uppercase;
   font-weight: 600;
   border-radius: 5px;
@@ -548,6 +547,7 @@ input[type="button"], button, .button {
   font-weight: 500;
   font-family: Poppins;
   letter-spacing: 1px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 button[type="submit"] {
