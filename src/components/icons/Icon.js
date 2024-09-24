@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import IconCodepen from './IconCodepen';
 import IconGithub from './IconGithub';
 import IconLinkedin from './IconLinkedIn';
@@ -15,11 +14,9 @@ function Icon({ name }) {
       return <IconLinkedin />;
     case 'Twitter':
       return <IconTwitter />;
+    default:
+      return <IconCodepen />;
   }
 }
-
-Icon.propTypes = {
-  name: PropTypes.string.isRequired,
-};
 
 export default Icon;
