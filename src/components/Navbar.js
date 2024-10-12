@@ -4,6 +4,7 @@ import logo from '../images/logo.svg';
 
 const navLinks = [
   { text: 'About', address: '/' },
+  { text: 'Skills', address: '/#skills' },
   { text: 'Projects', address: '/projects' },
   { text: 'Blog', address: '/blog' },
   { text: 'Contact', address: '/contact' },

@@ -105,7 +105,6 @@ h6 {
   margin-top: var(--spacing-12);
   margin-bottom: var(--spacing-6);
   line-height: var(--lineHeight-tight);
-  letter-spacing: -0.025em;
 }
 
 h2,
@@ -596,6 +595,27 @@ input:focus, textarea:focus {
 .form-error {
   margin-bottom: 0;
   font-size: var(--fontSize-0);
+}
+
+/* Skills Section */
+.skills-header{
+  text-transform: uppercase;
+  margin-bottom: 1.5em;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(6em, 1fr));
+  gap: 1em;
+}
+
+.skills-list li{
+  list-style-type: none;
+}
+
+.skills-list img{
+  height: 2.5em;
+  width: auto;
 }
 
 /* Responsive styling for smaller devices */
