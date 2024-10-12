@@ -626,6 +626,16 @@ input:focus, textarea:focus {
   width: auto;
 }
 
+.skill .tooltip {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.skill:hover .tooltip {
+  visibility: visible;
+}
+
 /* Projects Section */
 .projects-header{
   text-align: right;

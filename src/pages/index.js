@@ -25,24 +25,78 @@ function IndexPage() {
         <section id="skills">
           <h2 className="heading-1 section-header">My Tech Stack</h2>
           <ul className="skills-list">
-            <li className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" className="devicon" /></li>
-            <li className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" className="devicon" /></li>
-            <li className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="devicon" /></li>
-            <li className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" className="devicon" /></li>
-            <li className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="devicon" /></li>
-            <li className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="devicon" /></li>
-            <li className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" className="devicon" /></li>
-            <li className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" className="devicon" /></li>
-            <li className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="devicon" /></li>
-            <li className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue" className="devicon" /></li>
-            <li className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="devicon" /></li>
-            <li className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" className="devicon" /></li>
-            <li className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" className="devicon" /></li>
-            <li className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" className="devicon" /></li>
-            <li className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" className="devicon" /></li>
-            <li className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" className="devicon" /></li>
-            <li className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="GraphQL" className="devicon" /></li>
-            <li className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rabbitmq/rabbitmq-original.svg" alt="Rabbit MQ" className="devicon" /></li>
+            <li className="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" className="devicon" />
+              <span className="tooltip">HTML</span>
+            </li>
+            <li className="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" className="devicon" />
+              <span className="tooltip">CSS</span>
+            </li>
+            <li className="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="devicon" />
+              <span className="tooltip">JavaScript</span>
+            </li>
+            <li className="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" className="devicon" />
+              <span className="tooltip">Node.js</span>
+            </li>
+            <li className="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="devicon" />
+              <span className="tooltip">TypeScript</span>
+            </li>
+            <li className="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="devicon" />
+              <span className="tooltip">Python</span>
+            </li>
+            <li className="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" className="devicon" />
+              <span className="tooltip">Django</span>
+            </li>
+            <li className="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" className="devicon" />
+              <span className="tooltip">Express</span>
+            </li>
+            <li className="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="devicon" />
+              <span className="tooltip">React</span>
+            </li>
+            <li className="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue" className="devicon" />
+              <span className="tooltip">Vue</span>
+            </li>
+            <li className="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="devicon" />
+              <span className="tooltip">MongoDB</span>
+            </li>
+            <li className="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" className="devicon" />
+              <span className="tooltip">PostgreSQL</span>
+            </li>
+            <li className="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" className="devicon" />
+              <span className="tooltip">MySQL</span>
+            </li>
+            <li className="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" className="devicon" />
+              <span className="tooltip">AWS</span>
+            </li>
+            <li className="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" className="devicon" />
+              <span className="tooltip">Git</span>
+            </li>
+            <li className="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" className="devicon" />
+              <span className="tooltip">Docker</span>
+            </li>
+            <li className="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="GraphQL" className="devicon" />
+              <span className="tooltip">GraphQL</span>
+            </li>
+            <li className="skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rabbitmq/rabbitmq-original.svg" alt="Rabbit MQ" className="devicon" />
+              <span className="tooltip">Rabbit MQ</span>
+            </li>
           </ul>
         </section>
         <section id="projects">
