@@ -661,4 +661,7 @@ input:focus, textarea:focus {
   #contact-header {
     flex-basis: unset;
   }
+  .skills-list {
+    grid-template-columns: repeat(auto-fill, minmax(3em, 1fr));
+  }
 }
