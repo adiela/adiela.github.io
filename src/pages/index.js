@@ -2,6 +2,8 @@ import * as React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import SocialLinks from '../components/SocialLinks';
 import Layout from '../components/Layout';
+import IconEnvelope from '../components/icons/IconEnvelope';
+import ContactForm from '../components/ContactForm';
 
 function IndexPage() {
   return (
@@ -46,6 +48,16 @@ function IndexPage() {
         <section id="projects">
           <h2 className="heading-1 section-header projects-header">Projects</h2>
           Comming soon! Currently updating portfolio projects.
+        </section>
+        <section id="contact">
+          <header id="contact-header">
+            <h1 className="heading-1">Get in touch</h1>
+            <a className="contact-form-link" href="mailto:adiela.abishua@gmail.com">
+              <IconEnvelope />
+              adielaabishua@gmail.com
+            </a>
+          </header>
+          <ContactForm />
         </section>
       </main>
     </Layout>

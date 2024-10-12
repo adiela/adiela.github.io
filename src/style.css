@@ -317,6 +317,10 @@ fieldset {
   margin-bottom: var(--spacing-8);
 }
 
+section {
+  margin-bottom: var(--spacing-12);
+}
+
 /* Media queries */
 
 @media (max-width: 42rem) {
@@ -554,10 +558,15 @@ button[type="submit"] {
 
 /* Contact Section */
 
-#contact-section {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  column-gap: 2.5em;
+#contact {
+  display: flex;
+  column-gap: 2em;
+  min-height: 80vh;
+  margin-top: 3em;
+}
+
+#contact-header {
+  flex-basis: 25em;
 }
 
 .contact-form-link {
@@ -630,8 +639,7 @@ input:focus, textarea:focus {
     padding: 5em 2em 0;
   }
 
-  #about-section, #contact-section {
-    display: flex;
+  #about-section, #contact {
     flex-direction: column;
     row-gap: 2em;
     text-align: center;
@@ -639,5 +647,9 @@ input:focus, textarea:focus {
 
   .contact-form-link {
     justify-content: center;
+  }
+
+  #contact-header {
+    flex-basis: unset;
   }
 }

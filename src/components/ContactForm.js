@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import IconEnvelope from '../components/icons/IconEnvelope';
-import Layout from '../components/Layout';
 
-function ContactForm() {
+export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -103,27 +101,4 @@ function ContactForm() {
       <button type="submit" className="button">Submit</button>
     </form>
   );
-}
-
-function ContactPage() {
-  return (
-    <Layout>
-      <main id="contact-section" className="container">
-        <header>
-          <h1 className="heading-1">Get in touch</h1>
-          <a className="contact-form-link" href="mailto:adiela.abishua@gmail.com">
-            <IconEnvelope />
-            adielaabishua@gmail.com
-          </a>
-        </header>
-        <ContactForm />
-      </main>
-    </Layout>
-  );
-}
-
-export default ContactPage;
-
-export function Head() {
-  return <title>Contact | Adiela Abishua</title>;
 }
