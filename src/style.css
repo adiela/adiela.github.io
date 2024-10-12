@@ -667,6 +667,6 @@ input:focus, textarea:focus {
     flex-basis: unset;
   }
   .skills-list {
-    grid-template-columns: repeat(auto-fill, minmax(3em, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(4em, 1fr));
   }
 }
