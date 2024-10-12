@@ -630,6 +630,11 @@ input:focus, textarea:focus {
   visibility: hidden;
   position: absolute;
   z-index: 1;
+  background-color: var(--primary-accent-color);
+  color: var(--button-text-color);
+  border-radius: 0.25em;
+  display: inline-block;
+  padding: 0.2em;
 }
 
 .skill:hover .tooltip {
