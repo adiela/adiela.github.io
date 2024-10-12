@@ -84,7 +84,9 @@ body {
 }
 
 footer {
-  padding: var(--spacing-6) var(--spacing-0);
+  text-align: center;
+  font-size: var(--fontSize-0);
+  padding: var(--spacing-4) var(--spacing-0);
 }
 
 hr {
@@ -307,10 +309,6 @@ fieldset {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-}
-
-#blog-footer {
-  text-align: center;
 }
 
 .gatsby-highlight {

@@ -59,6 +59,9 @@ function IndexPage() {
           </header>
           <ContactForm />
         </section>
+        <footer>
+          <p>Built and Designed by Adiela Abishua &copy; {new Date().getFullYear()}</p>
+        </footer>
       </main>
     </Layout>
   );
