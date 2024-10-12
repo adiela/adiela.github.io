@@ -317,6 +317,8 @@ fieldset {
 
 section {
   margin-bottom: var(--spacing-12);
+  min-height: 50vh;
+  padding: var(--spacing-10) var(--spacing-0);
 }
 
 /* Media queries */
@@ -559,8 +561,6 @@ button[type="submit"] {
 #contact {
   display: flex;
   column-gap: 2em;
-  min-height: 80vh;
-  margin-top: 3em;
 }
 
 #contact-header {
