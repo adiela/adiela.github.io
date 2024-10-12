@@ -16,14 +16,14 @@ function IndexPage() {
           </div>
           <div className="column2">
             <span className="greeting">Hi there, I'm</span>
-            <h1 className="heading-1 font-xl">Adiela Abishua</h1>
+            <h1 className="gradient-text name-heading">Adiela Abishua</h1>
             <h2 className="sub-heading">Full-Stack Software Engineer</h2>
             <p id="bio">I am a software engineer with over 5 years of professional experience in building both B2C and B2B software. I am passionate about the use of technology in solving real world problems. I build software that is performant, and user friendly.</p>
             <a href="/adiela_abishua_resume.pdf" className="button float-right">View Resume</a>
           </div>
         </section>
         <section id="skills">
-          <h2 className="heading-1 section-header">My Tech Stack</h2>
+          <h2 className="gradient-text uppercase mb-2">My Tech Stack</h2>
           <ul className="skills-list">
             <li className="skill">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" className="devicon" />
@@ -100,12 +100,12 @@ function IndexPage() {
           </ul>
         </section>
         <section id="projects">
-          <h2 className="heading-1 section-header projects-header">Projects</h2>
+          <h2 className="gradient-text uppercase align-right mb-2">Projects</h2>
           Comming soon! Currently updating portfolio projects.
         </section>
         <section id="contact">
           <header id="contact-header">
-            <h1 className="heading-1">Get in touch</h1>
+            <h2 className="gradient-text uppercase">Get in touch</h2>
             <a className="contact-form-link" href="mailto:adiela.abishua@gmail.com">
               <IconEnvelope />
               adielaabishua@gmail.com

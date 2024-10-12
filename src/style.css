@@ -104,7 +104,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
-  margin-top: var(--spacing-12);
+  margin-top: var(--spacing-6);
   margin-bottom: var(--spacing-6);
   line-height: var(--lineHeight-tight);
 }
@@ -119,13 +119,13 @@ h6 {
 }
 
 h1 {
-  font-weight: var(--fontWeight-black);
+  font-weight: var(--fontWeight-bold);
   font-size: var(--fontSize-6);
   color: var(--secondary-accent-color);
 }
 
 h2 {
-  font-size: var(--fontSize-5);
+  font-size: var(--fontSize-6);
 }
 
 h3 {
@@ -316,9 +316,26 @@ fieldset {
 }
 
 section {
-  margin-bottom: var(--spacing-12);
   min-height: 50vh;
   padding: var(--spacing-20) var(--spacing-0);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.mb-2 {
+  margin-bottom: var(--spacing-6);
+}
+
+.gradient-text {
+  background: linear-gradient(140deg, var(--primary-accent-color), var(--secondary-accent-color));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.align-right{
+  text-align: right;
 }
 
 /* Media queries */
@@ -506,14 +523,9 @@ section {
   padding: 0 2em;
 }
 
-.heading-1 {
-  font-family: Montserrat;
-  font-weight: 700;
-  font-size: var(--fontSize-6);
+.name-heading {
   margin: 0;
-  background: linear-gradient(140deg, var(--primary-accent-color), var(--secondary-accent-color));
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: var(--fontSize-7);
 }
 
 .sub-heading {
@@ -540,9 +552,8 @@ section {
 
 input[type="button"], button, .button {
   background-image: linear-gradient(140deg, var(--primary-accent-color), var(--secondary-accent-color));
-  padding: 1em 1.5em;
+  padding: 0.75em 1.5em;
   text-transform: uppercase;
-  font-weight: 600;
   border-radius: 0.3em;
   border-width: 0;
   color: var(--button-text-color);
@@ -553,19 +564,15 @@ input[type="button"], button, .button {
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
 }
 
-button[type="submit"] {
-  width: 100%
-}
-
 /* Contact Section */
 
 #contact {
   display: flex;
-  column-gap: 2em;
+  column-gap: 1.5em;
 }
 
 #contact-header {
-  flex-basis: 25em;
+  flex-basis: 30em;
 }
 
 .contact-form-link {
@@ -575,9 +582,6 @@ button[type="submit"] {
   margin-top: .6em;
 }
 
-.font-xl {
-  font-size: var(--fontSize-7);
-}
 
 /* Forms */
 
@@ -605,12 +609,8 @@ input:focus, textarea:focus {
   font-size: var(--fontSize-0);
 }
 
-/* Skills Section */
-.section-header{
-  text-transform: uppercase;
-  margin-bottom: 1.5em;
-}
 
+/* Skills Section */
 .skills-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(6em, 1fr));
@@ -641,10 +641,6 @@ input:focus, textarea:focus {
   visibility: visible;
 }
 
-/* Projects Section */
-.projects-header{
-  text-align: right;
-}
 
 /* Responsive styling for smaller devices */
 @media (max-width: 1024px) {
