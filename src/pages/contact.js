@@ -110,7 +110,7 @@ function ContactPage() {
     <Layout>
       <main id="contact-section" className="container">
         <header>
-          <h1 className="heading-1 font-l">Get in touch</h1>
+          <h1 className="heading-1">Get in touch</h1>
           <a className="contact-form-link" href="mailto:adiela.abishua@gmail.com">
             <IconEnvelope />
             adielaabishua@gmail.com
