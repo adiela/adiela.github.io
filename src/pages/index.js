@@ -21,7 +21,7 @@ function IndexPage() {
           </div>
         </section>
         <section id="skills">
-          <h2 className="heading-1 skills-header">My Tech Stack</h2>
+          <h2 className="heading-1 section-header">My Tech Stack</h2>
           <ul className="skills-list">
             <li className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" className="devicon" /></li>
             <li className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" className="devicon" /></li>
@@ -42,6 +42,10 @@ function IndexPage() {
             <li className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="GraphQL" className="devicon" /></li>
             <li className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rabbitmq/rabbitmq-original.svg" alt="Rabbit MQ" className="devicon" /></li>
           </ul>
+        </section>
+        <section id="projects">
+          <h2 className="heading-1 section-header projects-header">Projects</h2>
+          Comming soon! Currently updating portfolio projects.
         </section>
       </main>
     </Layout>

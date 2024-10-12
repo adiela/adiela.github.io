@@ -598,7 +598,7 @@ input:focus, textarea:focus {
 }
 
 /* Skills Section */
-.skills-header{
+.section-header{
   text-transform: uppercase;
   margin-bottom: 1.5em;
 }
@@ -616,6 +616,11 @@ input:focus, textarea:focus {
 .skills-list img{
   height: 2.5em;
   width: auto;
+}
+
+/* Projects Section */
+.projects-header{
+  text-align: right;
 }
 
 /* Responsive styling for smaller devices */
