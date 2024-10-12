@@ -101,7 +101,7 @@ function IndexPage() {
         </section>
         <section id="projects">
           <h2 className="gradient-text uppercase align-right mb-2">Projects</h2>
-          Comming soon! Currently updating portfolio projects.
+          Coming soon! Currently updating portfolio projects.
         </section>
         <section id="contact">
           <header id="contact-header">
