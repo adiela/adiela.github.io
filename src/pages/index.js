@@ -17,7 +17,7 @@ function IndexPage() {
             <h1 className="heading-1 font-xl">Adiela Abishua</h1>
             <h2 className="sub-heading">Full-Stack Software Engineer</h2>
             <p id="bio">I am a software engineer with over 5 years of professional experience in building both B2C and B2B software. I am passionate about the use of technology in solving real world problems. I build software that is performant, and user friendly.</p>
-            <a href="/resume.pdf" className="button float-right">View Resume</a>
+            <a href="/adiela_abishua_resume.pdf" className="button float-right">View Resume</a>
           </div>
         </section>
       </main>
