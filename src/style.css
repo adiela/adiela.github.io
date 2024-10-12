@@ -337,13 +337,14 @@ section {
 /* Navigation Bar */
 
 #navbar {
-  position: absolute;
-  padding: 1.5em 3em;
+  position: sticky;
+  padding: 1.5em 3em 0.5em;
   display: flex;
   justify-content: space-between;
   font-weight: 500;
   top: 0;
   width: 100vw;
+  background-color: hsl(from var(--background-color) h s l / 0.9);
 }
 
 #nav-list {
