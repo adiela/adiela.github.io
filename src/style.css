@@ -318,7 +318,7 @@ fieldset {
 section {
   margin-bottom: var(--spacing-12);
   min-height: 50vh;
-  padding: var(--spacing-10) var(--spacing-0);
+  padding: var(--spacing-20) var(--spacing-0);
 }
 
 /* Media queries */
@@ -484,7 +484,7 @@ section {
   justify-content: center;
   align-items: center;
   column-gap: 3em;
-  min-height: calc(100vh - 6em);
+  min-height: calc(100vh - 7em);
 }
 
 #about-section .column1{
@@ -503,7 +503,7 @@ section {
 .container {
   margin: auto;
   max-width: 1040px;
-  padding: 6em 3em 0;
+  padding: 0 2em;
 }
 
 .heading-1 {
