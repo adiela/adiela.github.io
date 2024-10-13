@@ -3,6 +3,7 @@ import IconCodepen from './IconCodepen';
 import IconGithub from './IconGithub';
 import IconLinkedin from './IconLinkedIn';
 import IconTwitter from './IconTwitter';
+import IconLink from './IconLink';
 
 function Icon({ name }) {
   switch (name) {
@@ -15,7 +16,7 @@ function Icon({ name }) {
     case 'Twitter':
       return <IconTwitter />;
     default:
-      return <IconCodepen />;
+      return <IconLink />;
   }
 }
 
