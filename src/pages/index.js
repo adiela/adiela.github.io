@@ -9,7 +9,7 @@ function IndexPage() {
   return (
     <Layout>
       <main className="container">
-        <section id="about-section">
+        <section id="about">
           <div className="column1">
             <StaticImage src="../images/adiela_abishua.jpg" alt="Personal Image" className="avatar" quality={100} />
             <SocialLinks />
