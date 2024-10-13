@@ -6,6 +6,9 @@ function Layout(props) {
     <>
       <Navbar />
       {props.children}
+      <footer>
+        <p>Built and Designed by Adiela Abishua &copy; {new Date().getFullYear()}</p>
+      </footer>
     </>
   );
 }
