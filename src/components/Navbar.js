@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import logo from '../images/logo.svg';
 
 const navLinks = [
-  { text: 'About', address: '/' },
+  { text: 'About', address: '/#about' },
   { text: 'Skills', address: '/#skills' },
   { text: 'Projects', address: '/#projects' },
   { text: 'Contact', address: '/#contact' },
