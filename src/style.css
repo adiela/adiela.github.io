@@ -501,7 +501,7 @@ section {
   justify-content: center;
   align-items: center;
   column-gap: 3em;
-  min-height: calc(100vh - 7em);
+  min-height: calc(100vh - 4em);
 }
 
 #about-section .column1{
