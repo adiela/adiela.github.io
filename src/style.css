@@ -48,7 +48,6 @@
   --fontSize-4: 1.728rem;
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
-  --fontSize-7: 72px;
   --color-text: #333333;
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
@@ -526,7 +525,7 @@ section {
 
 .name-heading {
   margin: 0;
-  font-size: var(--fontSize-7);
+  font-size: clamp(40px, 8vw, 72px);
 }
 
 .sub-heading {
@@ -647,12 +646,14 @@ input:focus, textarea:focus {
 @media (max-width: 1024px) {
   .container {
     max-width: 800px;
-    padding: 5em 2em 0;
   }
 
   #about-section, #contact {
     flex-direction: column;
     row-gap: 2em;
+  }
+
+  #contact {
     text-align: center;
   }
 
@@ -665,5 +666,9 @@ input:focus, textarea:focus {
   }
   .skills-list {
     grid-template-columns: repeat(auto-fill, minmax(4em, 1fr));
+  }
+
+  section {
+    padding: var(--spacing-10) var(--spacing-0);
   }
 }
