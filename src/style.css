@@ -536,6 +536,7 @@ section {
 }
 
 .greeting {
+  font-size: var(--fontSize-0);
   color: var(--primary-accent-color);
 }
 
